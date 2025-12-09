@@ -13,6 +13,9 @@ int	main(void)
 	ft_printf("Basic print, no value passed test\n");
 	ft_printf("Hello World, my I am %d years old.\n", age);
 
+	nulltest = ft_printf(NULL);
+	ft_printf("null test = %i.\n", nulltest);
+
 	printf("/************ printf tests ************/");
 	printf("Basic print, no value passed test\n");
 	printf("Hello World, my I am %d years old.\n", age);
@@ -22,6 +25,6 @@ int	main(void)
 	nulltest = printf(NULL);
 	printf("null test = %i.\n", nulltest);
 
-	printf("This is a no pass var test - %d\n");
+	//printf("This is a no pass var test - %d\n");
 	return (0);
 }
