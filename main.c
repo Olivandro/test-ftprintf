@@ -21,7 +21,9 @@ int	main(void)
 	printf("Hello World, my I am %d years old.\n", age);
 	printf("My favourite phrase is: %s\n", phrase);
 	printf("I really like the integer %i.\n", favnum);
-	printf("the initial of my second given name is '%d'.\n", initial);
+	printf("the initial of my second given name is '%c'.\n", initial);
+
+	/* This test does not work on Mac OSX */
 	nulltest = printf(NULL);
 	printf("null test = %i.\n", nulltest);
 
