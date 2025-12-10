@@ -14,6 +14,7 @@ int	main(void)
 	ft_printf("Hello World, my I am %d years old.\n", age);
 	ft_printf("My favourite phrase is: %s\n", phrase);
 	ft_printf("I really like the integer %i.\n", favnum);
+	ft_printf("the initial of my second given name is '%c'.\n", initial);
 
 	nulltest = ft_printf(NULL);
 	ft_printf("null test = %i.\n", nulltest);
