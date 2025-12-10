@@ -9,7 +9,7 @@ int	main(void)
 	char	phrase[] = "Smile at least once a day, if not whats the point?";
 	char	initial = 'D';
 
-	ft_printf("/************ ft_printf tests ************/");
+	ft_printf("/************ ft_printf tests ************/\n");
 	ft_printf("Basic print, no value passed test\n");
 	ft_printf("Hello World, my I am %d years old.\n", age);
 	ft_printf("My favourite phrase is: %s\n", phrase);
@@ -18,7 +18,7 @@ int	main(void)
 	nulltest = ft_printf(NULL);
 	ft_printf("null test = %i.\n", nulltest);
 
-	printf("/************ printf tests ************/");
+	printf("/************ printf tests ************/\n");
 	printf("Basic print, no value passed test\n");
 	printf("Hello World, my I am %d years old.\n", age);
 	printf("My favourite phrase is: %s\n", phrase);
