@@ -12,6 +12,8 @@ int	main(void)
 	ft_printf("/************ ft_printf tests ************/");
 	ft_printf("Basic print, no value passed test\n");
 	ft_printf("Hello World, my I am %d years old.\n", age);
+	ft_printf("My favourite phrase is: %s\n", phrase);
+	ft_printf("I really like the integer %i.\n", favnum);
 
 	nulltest = ft_printf(NULL);
 	ft_printf("null test = %i.\n", nulltest);
