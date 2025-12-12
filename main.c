@@ -26,10 +26,15 @@ int	main(void)
 	printf("I really like the integer %i.\n", favnum);
 	printf("the initial of my second given name is '%c'.\n", initial);
 
+#ifdef __linux__
 	/* This test does not work on Mac OSX */
 	nulltest = printf(NULL);
 	printf("null test = %i.\n", nulltest);
+#endif
 
-	//printf("This is a no pass var test - %d\n");
+	printf("pointer ref for string phrase: %p\n", &phrase);
+	printf("Hexadecimal lower case: %x\n", age);
+	printf("Hexadecimal upper case: %X\n", age);
+
 	return (0);
 }
