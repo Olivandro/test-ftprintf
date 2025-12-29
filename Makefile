@@ -1,12 +1,10 @@
-SRC = main.c
+SRC = main.cpp general_out.cpp general_extreme.cpp #print.cpp
 
-OBJ = $(SRC:%.c=%.o)
-
-CC = cc
-CFLAGS = -Wall -Wextra -Werror -g 
-INC = -I../ 
+CC = clang++ 
+CFLAGS = -std=c11 -std=c++11 -Wno-everything -g 
+INC = -I../ -I./ 
 INCLIB = -L../ 
-LDFLAG = -lftprintf 
+LDFLAG = -ldl -lftprintf 
 
 NAME = ft_printf
 
@@ -14,14 +12,11 @@ REMOVE = rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	$(CC) $(CFLAGS)	$(INCLIB) $(OBJ) -o $(NAME) $(LDFLAG)
-
-%.o:%.c
-	$(CC) $(CFLAGS) $(INC) -c $< -o $(<:%.c=%.o)
+$(NAME): 
+	$(CC) $(CFLAGS)	$(INC) $(INCLIB) $(SRC) -o $(NAME) $(LDFLAG)
 
 clean:
-	$(REMOVE) $(OBJ) $(NAME)
+	$(REMOVE) $(NAME)
 
 re: clean $(NAME)
 
