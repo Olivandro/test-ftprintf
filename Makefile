@@ -8,7 +8,7 @@ LDFLAG = -ldl -lftprintf
 
 NAME = ft_printf
 
-REMOVE = rm -f
+REMOVE = rm -rf
 
 all: $(NAME)
 
@@ -17,6 +17,7 @@ $(NAME):
 
 clean:
 	$(REMOVE) $(NAME)
+	$(REMOVE) *.dSYM
 
 re: clean $(NAME)
 
